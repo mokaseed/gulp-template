@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>ページのタイトル</title>
+		<meta name="description" content="ページの説明" />
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon/webclipicon -->
+		<link rel="icon" href="favicon.ico" />
+		<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="webclip.png" />
+
+		<!-- ogp -->
+		<meta property="og:site_name" content="サイト名" />
+		<meta property="og:url" content="URL" />
+		<meta property="og:type" content="website or article" />
+		<meta property="og:title" content="ページのタイトル" />
+		<meta property="og:description" content="ページの説明" />
+		<meta property="og:image" content="URL" />
+		<meta property="og:locale" content="ja_JP" />
+		<!-- <meta property="fb:app_id" content="AppID"> -->
+		<meta name="twitter:card" content="summary_large_image or summary" />
+		<!-- <meta name="twitter:site" content="@moshamusha2010" /> -->
+		<meta name="twitter:description" content="ページの説明" />
+		<meta name="twitter:image:src" content="URL" />
+
+		<!-- css -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- js -->
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+			defer
+		></script>
+		<script src="js/bundle.min.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav-header">
+				<div class="nav-header__container">
+					<h1 class="nav-header__company-logo">
+						<a href="#mainview">
+							<img src="images/company-logo.png" alt="会社ロゴ" class="nav-header__company-logo-img">
+						</a>
+					</h1>
+					<ul class="nav-header__menu">
+						<li class="nav-header__menu-item">
+							<a href="" class="nav-header__link">HOME</a>
+						</li>
+						<li class="nav-header__menu-item">
+							<a href="" class="nav-header__link">体験レッスン</a>
+						</li>
+						<li class="nav-header__menu-item">
+							<a href="" class="nav-header__link">スケジュール / 予約</a>
+						</li>
+						<li class="nav-header__menu-item">
+							<a href="" class="nav-header__link">レッスンについて</a>
+						</li>
+						<li class="nav-header__menu-item">
+							<a href="" class="nav-header__link">料金</a>
+						</li>
+						<li class="nav-header__menu-item">
+							<a href="" class="nav-header__link">アクセス</a>
+						</li>
+						<li class="nav-header__menu-item">
+							<a href="" class="nav-header__link">インストラクター紹介</a>
+						</li>
+						<li class="nav-header__menu-item">
+							<a href="" class="nav-header__link">オンラインレッスン</a>
+						</li>
+						<li class="nav-header__menu-item">
+							<a href="" class="nav-header__link">企業・団体向け出張ヨガ</a>
+						</li>
+					</ul>
+					<button class="nav-header__toggle">
+						<div class="nav-header__toggle-line"></div>
+						<div class="nav-header__toggle-line"></div>
+						<div class="nav-header__toggle-line"></div>
+						<div class="nav-header__toggle-text">MENU</div>
+					</button>
+				</div>
+			</nav>
+			<nav class="nav-drawer">
+				<div class="nav-drawer__container">
+					<ul class="na
+					v-drawer__menu">
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-text">HOME</span>
+							</a>
+						</li>
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-text">体験レッスン</span>
+							</a>
+						</li>
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-text">スケジュール / 予約</span>
+							</a>
+						</li>
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-text">レッスンについて</span>
+							</a>
+						</li>
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-text">料金</span>
+							</a>
+						</li>
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-text">アクセス</span>
+							</a>
+						</li>
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-text">インストラクター紹介</span>
+							</a>
+						</li>
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-text">オンラインレッスン</span>
+							</a>
+						</li>
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-text">企業・団体向け出張ヨガ</span>
+							</a>
+						</li>
+						<li class="nav-drawer__menu-item">
+							<a href="" class="nav-drawer__link">
+								<span class="nav-drawer__link-icon">○</span>
+								<span class="nav-drawer__link-icon">○</span>
+								<span class="nav-drawer__link-icon">○</span>
+							</a>
+						</li>
+					</ul>
+					<div class="nav-drawer__bottom-link">
+						<p class="nav-drawer__bottom-link-title">LINK</p>
+						<a href="" class="nav-drawer__bottom-link-text">パーソナルトレーニング EVOLOTUS</a>
+					</div>
+				</div><!-- /.nav-header__container -->
+				<div class="nav-drawer__overlay"></div>
+			</nav>
+		</header>
+		
+		<div class="bottom-fixed">
+			<a href="" class="bottom-fixed__contact-link">体験レッスン</a>
+			<a href="" class="bottom-fixed__contact-link">WEB予約</a>
+		</div>
+
+		<main class="wrapper">
+
+			<!-- mainview -->
+			<section class="mainview">
+				<div class="mainview__container">
+					<img src="メインビュー画像" alt="" class="mainview__logo-img">
+					<p class="mainview__text">ヨガをもっと<br>自由に楽しく</p>
+				</div>
+			</section><!-- ./mainview -->
+
+			<!-- news -->
+			<section class="news top-news">
+				<div class="news__container">
+
+					<div class="news__heading">
+						<!-- page-heading -->
+						<h2 class="page-heading">
+							<div class="page-heading__container">
+								<div class="page-heading__text-main">News</div>
+								<div class="page-heading__text-sub">お知らせ</div>
+							</div>
+						</h2>
+					</div>
+
+					<div class="news__list">
+
+						<article class="news__list-item">
+							<div class="news-item">
+								<figure class="news__thumbnail">
+									<img src="#" alt="" class="news__thumbnail-img">
+								</figure>
+								<div class="news__content">
+									<p class="news__content-date">2021.5.11</p>
+									<h3 class="news__content-title">タイトルをいれる</h3>
+									<p class="news__content-text">ここにテキストをいれる。ここにテキストをいれる。ここにテキストをいれる。</p>
+									<a href="" class="news__content-btv">詳しくみる</a>
+								</div>
+							</div>
+						</article>
+
+						<article class="news__list-item">
+							<div class="news-item">
+								<figure class="news__thumbnail">
+									<img src="#" alt="" class="news__thumbnail-img">
+								</figure>
+								<div class="news__content">
+									<p class="news__content-date">2021.5.11</p>
+									<h3 class="news__content-title">タイトルをいれる</h3>
+									<p class="news__content-text">ここにテキストをいれる。ここにテキストをいれる。ここにテキストをいれる。</p>
+									<a href="" class="news__content-btv">詳しくみる</a>
+								</div>
+							</div>
+						</article>
+
+					</div><!-- ./news__list -->
+				</div>
+			</section><!-- ./news -->
+
+			<!-- about -->
+			<section class="about top-about">
+				<div class="about__container">
+					<dl class="about__content">
+						<dt class="about__content-title">アイアンガーヨガを主軸に、身体の力学に基づいたヨガシークエンスを体験できるスタジオ</dt>
+						<dd class="about__content-text">『このポーズからこっちに繋がっていくのかぁ』と驚きや発見のあるシークエンスを毎日作っています。今日はどんなレッスンかなぁとワクワクするようなヨガを日常に。</dd>
+					</dl>
+
+				</div>
+			</section><!-- ./about -->
+
+			<!-- instagram -->
+			<section class="instagram top-instagram">
+				<div class="instagram__container">
+
+					<div class="instagram__heading">
+						<!-- page-heading -->
+						<h2 class="page-heading">
+							<div class="page-heading__container">
+								<div class="page-heading__text-main">Instagram</div>
+								<div class="page-heading__text-sub">インスタグラム</div>
+							</div>
+						</h2>
+					</div>
+				</div>
+			</section><!-- ./instagram -->
+
+			<!-- lessons -->
+			<section class="lessons top-lessons">
+				<div class="lessons__container">
+
+					<div class="lessons__heading">
+						<!-- page-heading -->
+						<h2 class="page-heading">
+							<div class="page-heading__container">
+								<div class="page-heading__text-main">Lessons</div>
+								<div class="page-heading__text-sub">レッスン</div>
+							</div>
+						</h2>
+					</div>
+
+					<div class="lessons__content">
+
+						<!-- lessons-list -->
+						<ul class="lessons-list">
+							<li class="lessons-list__content">
+								<dl class="lessons-list__lesson">
+									<dt class="lessons-list__lesson-title">BASIC</dt>
+									<dd class="lessons-list__lessong-text">パワーヨガがはじめての方におすすめのクラス。初心者の方でも無理なくじっくりとヨガの基礎について学ぶことができます。</dd>
+								</dl>
+							</li>
+							<li class="lessons-list__content">
+								<dl class="lessons-list__lesson">
+									<dt class="lessons-list__lesson-title">中級</dt>
+									<dd class="lessons-list__lessong-text">呼吸と動きを合わせて流れるようにポーズを取っていくレッスンです。力学に基づいた身体の使い方やアライメントを動きのなかで学ぶことができます。</dd>
+								</dl>
+							</li>
+							<li class="lessons-list__content">
+								<dl class="lessons-list__lesson">
+									<dt class="lessons-list__lesson-title">アドバンス</dt>
+									<dd class="lessons-list__lessong-text">中級から上級ポーズまで強度のあるポーズをシークエンスに組み込んだクラス。夢中でヨガに没頭する感覚を味わってください。各種アームバランスや逆転のポーズも練習します。</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<!-- lessons-message -->
+						<div class="lessons-message">
+							<div class="lessons-message__title-wrapper">
+								<h3 class="lessons-message__title">自分のやりたいヨガを<br>心ゆくまで</h3>
+								<figure class="lessons-message__thumbnail">
+									<img src="" alt="" class="lessons-message__thumbnail-img">
+								</figure>
+							</div>
+							<p class="lessons-message__text">大人数スタジオや独学ではわかりにくいポイントも丁寧にお教えします。 カラダは１人ひとりが全く違った特別なもの。ヨガをする上でも、自分１人にフォーカスしたパーソナルトレーニングを受けることで、普段見過ごしがちなカラダの使い方を正しく身につけることに繋がります。初心者の方は、じっくり自分だけのペースで進められるので安心です。また、ヨガにある程度慣れている方は、やってみたいポーズ、苦手なポーズを練習したり、強度の高いレッスンをするのもおすすめです。</p>
+						</div>
+
+					</div>
+				</div>
+			</section><!-- ./lessons -->
+				
+			<!-- price -->
+			<section class="price top-price">
+				<div class="price__container">
+					
+					<div class="price__heading">
+						<!-- page-heading -->
+						<h2 class="page-heading">
+							<div class="page-heading__container">
+								<div class="page-heading__text-main">Price</div>
+								<div class="page-heading__text-sub">料金</div>
+							</div>
+						</h2>
+					</div>
+
+					<div class="price__content">
+
+						<!-- drop-in -->
+						<div class="drop-in">
+							<div class="drop-in__box price-box">
+								<p class="drop-in__box-top price-box__top">
+									<span class="drop-in__menu price-box__menu">ドロップイン</span>
+									<span class="drop-in__frequency price-box__main-text">１回</span>
+								</p>
+								<p class="drop-in__box-bottom price-box__bottom">
+									<span class="drop-in__time price-box__sub-text">60分</span>
+									<span class="drop-in__price price-box__price">￥3300</span>
+								</p>
+							</div>
+							<p class="drop-in__note">※80分の特別レッスンは¥3850</p>
+						</div><!-- ./drop-in -->
+
+						<!-- coupon -->
+						<div class="coupon">
+							<h3 class="coupon__heading article-heading">回数券</h3>
+							<p class="coupon__note">※60分・80分のどちらのレッスンでもご利用いただけます</p>
+
+							<ul class="coupon__list">
+								<li class="coupon__list-item">
+									<div class="coupon__box price-box">
+										<figure class="coupon__thumbnail">
+											<img src="" alt="" class="coupon__thumbnail-img">
+										</figure>
+										<p class="coupon__box-top price-box__top">
+											<span class="coupon__frequency price-box__main-text">3回券</span>
+											<span class="coupon__period price-box__sub-text">有効期限２ヶ月</span>
+										</p>
+										<p class="coupon__box-bottom price-box__bottom">
+											<span class="coupon__price price-box__price">￥8250</span>
+										</p>
+									</div>
+								</li>
+
+								<li class="coupon__list-item">
+									<div class="coupon__box price-box">
+										<figure class="coupon__thumbnail">
+											<img src="" alt="" class="coupon__thumbnail-img">
+										</figure>
+										<p class="coupon__box-top price-box__top">
+											<span class="coupon__frequency price-box__main-text">5回券</span>
+											<span class="coupon__period price-box__sub-text">有効期限２ヶ月</span>
+										</p>
+										<p class="coupon__box-bottom price-box__bottom">
+											<span class="coupon__price price-box__price">￥12100</span>
+										</p>
+									</div>
+								</li>
+
+								<li class="coupon__list-item">
+									<div class="coupon__box price-box">
+										<figure class="coupon__thumbnail">
+											<img src="" alt="" class="coupon__thumbnail-img">
+										</figure>
+										<p class="coupon__box-top price-box__top">
+											<span class="coupon__frequency price-box__main-text">8回券</span>
+											<span class="coupon__period price-box__sub-text">有効期限3ヶ月</span>
+										</p>
+										<p class="coupon__box-bottom price-box__bottom">
+											<span class="coupon__price price-box__price">￥18700</span>
+										</p>
+									</div>
+								</li>
+
+								<li class="coupon__list-item">
+									<div class="coupon__box price-box">
+										<figure class="coupon__thumbnail">
+											<img src="" alt="" class="coupon__thumbnail-img">
+										</figure>
+										<p class="coupon__box-top price-box__top">
+											<span class="coupon__frequency price-box__main-text">10回券</span>
+											<span class="coupon__period price-box__sub-text">有効期限3ヶ月</span>
+										</p>
+										<p class="coupon__box-bottom price-box__bottom">
+											<span class="coupon__price price-box__price">￥22000</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+							<p class="coupon__note">※有効期限内に使い切れなかった場合は有効期限日から1カ月以内であれば、1回＋1100円でご参加いただけます。<br>※使い切れなかった分の払い戻しは致しかねます。<br>※チケットを紛失された場合、再発行は致しかねます。<br>※プライベートレッスンにはご利用いただけません。</p>
+						</div><!-- ./coupon -->
+
+						<!-- private -->
+						<div class="private">
+							<h3 class="private__heading article-heading">プライベートレッスン（60分）</h3>
+							
+							<!-- alone -->
+							<div class="alone">
+								<div class="alone__box price-box">
+									<p class="alone__box-top price-box__top">
+										<span class="alone__menu price-box__main-text">１名様</span>
+									</p>
+									<p class="alone__box-bottom price-box__bottom">
+										<span class="alone__price price-box__price">￥6600</span>
+									</p>
+								</div>
+							</div><!-- ./alone -->
+
+							<!-- multiple-people -->
+							<div class="multiple-people">
+								<div class="multiple-people__box price-box">
+									<p class="multiple-people__box-top price-box__top">
+										<span class="multiple-people__menu price-box__main-text">２名以上の場合</span>
+									</p>
+									<div class="multiple-people__box-bottom price-box__bottom">
+										<ul>
+											<li class="multiple-people__price price-box__price"></li>
+											<li class="multiple-people__price price-box__price"></li>
+											<li class="multiple-people__price price-box__price"></li>
+											<li class="multiple-people__price price-box__price"></li>
+										</ul>
+									</div>
+								</div>
+								<p class="multiple-people__note">自分の好きなヨガを自分のペースで好きなだけ楽しみたい方のためのプライベートレッスン。<br>「今日はちょっとアクティブなヨガがしたい！」「今日はリラックス系がいいな♪」といった１人ひとりの希望に合わせて、あなただけのオーダーメイドのヨガレッスンを提供いたします。「スタジオやジムでヨガをやっているけれど、正しいやり方を知りたい」という方はアライメントを学びながらヨガを進めていきますのでヨガをより深く理解することができます。初心者の方もインストラクターと相談しながら、その時の体調などに合わせて自由にレッスンメニューを組むことができますので安心してヨガをお楽しみいただけます。</p>
+							</div><!-- ./multiple-people -->
+						</div><!-- ./private -->
+
+					</div>
+				</div>
+			</section><!-- ./about -->
+					
+			<!-- trial -->
+			<section class="trial top-trial">
+				<div class="trial__container">
+					
+					<div class="trial__heading">
+						<!-- page-heading -->
+						<h2 class="page-heading">
+							<div class="page-heading__container">
+								<div class="page-heading__text-main">Trial lesson</div>
+								<div class="page-heading__text-sub">体験レッスンの流れ</div>
+							</div>
+						</h2>
+					</div>
+
+					<div class="trial__content">
+						<!-- trial-box -->
+						<div class="trial__box trial-box">
+							<p class="trial-box__title">初めての方限定</p>
+							<p class="trial-box__menu">初めての方限定
+								<span class="trial-box__price">¥2200</span>
+							</p>
+							<p class="trial-box__60minute-note">60分のグループレッスンを体験いただけます。</p>
+							<p class="trial-box__80minute-note">80分のグループレッスンの体験受講料は¥2750です。</p>
+						</div><!-- ./trial-box -->
+
+						<!-- trial-step -->
+						<div class="trial__step trial-step">
+							<ul class="trial-step__list">
+								<li class="trial-step__list-item">
+									<div class="trial-step__box">
+										<h4 class="trial-step__title">STEP<span class="trial-step__number">01</span></h4>
+										<p class="trial-step__text">レッスンスケジュールを見て、受講するレッスン日時を選びます。初回はパワーヨガBASICがおすすめです。</p>
+									</div>
+								</li>
+								<li class="trial-step__list-item">
+									<div class="trial-step__box">
+										<h4 class="trial-step__title">STEP<span class="trial-step__number">02</span></h4>
+										<p class="trial-step__text">WEBの予約フォームから、もしくはお電話にてレッスンを予約します。</p>
+									</div>
+								</li>
+								<li class="trial-step__list-item">
+									<div class="trial-step__box">
+										<h4 class="trial-step__title">STEP<span class="trial-step__number">03</span></h4>
+										<p class="trial-step__text">当日は、ヨガのできる動きやすい服装にあらかじめ着替えて、レッスン開始時刻の15分前にお越しください。</p>
+									</div>
+									<p class="trial-step__note">ヨガマットは無料レンタルがございます。<br>ご自身のマットをお持ちいただいても構いません。</p>
+									<img src="#" alt="" class="trial-step__note-img">
+								</li>
+								<li class="trial-step__list-item">
+									<div class="trial-step__box">
+										<h4 class="trial-step__title">STEP<span class="trial-step__number">04</span></h4>
+										<p class="trial-step__text">スタジオに着いたら最初に同意書のご記入、受講料のお支払いをして、レッスンをお楽しみください。</p>
+									</div>
+									<p class="trial-step__note">感染症対策として常時換気をしております。<br>同時に冷暖房もつけていますが<br>服装による体温調節をお願い致します。</p>
+								</li>
+							</ul>
+						</div><!-- ./trial-step -->
+					</div>
+				</div>
+			</section>
+						
+			<!-- access -->
+			<section class="access top-access">
+				<div class="access__container">
+					
+					<div class="access__heading">
+						<!-- page-heading -->
+						<h2 class="page-heading">
+							<div class="page-heading__container">
+								<div class="page-heading__text-main">Access</div>
+								<div class="page-heading__text-sub">アクセス</div>
+							</div>
+						</h2>
+					</div>
+
+					<div class="access__container">
+
+						<div class="google-map">
+							<div class="google-map__link"></div>
+							<img src="" alt="" class="google-map__company-logo company-logo">
+							<p class="google-map__address">〒371-0831<br>群馬県前橋市小相木町３２７ タカゼンビル２階</p>
+							<p class="google-map__parking">駐車場　店舗裏に５台有</p>
+						</div>
+
+						<div class="parking">
+							<h3 class="coupon__heading article-heading">駐車場</h3>
+							<img src="" alt="" class="parking__map-img">
+							<img src="" alt="" class="parking__directions-img">
+						</div>
+
+					</div>
+				</div>
+			</section>
+							
+			<!-- instructor -->
+			<section class="instructor top-instructor">
+				<div class="instructor__container">
+					
+					<div class="instructor__heading">
+						<!-- page-heading -->
+						<h2 class="page-heading">
+							<div class="page-heading__container">
+								<div class="page-heading__text-main">Instructor</div>
+								<div class="page-heading__text-sub">講師</div>
+							</div>
+						</h2>
+					</div>
+
+					<div class="instructor__content">
+						<figure class="instructor__thumbnail">
+							<img src="" alt="" class="instructor__thumbnail-img">
+						</figure>
+						<div class="instructor__profile">
+							<h3 class="instructor__name">小林哲朗
+								<span class="instructor__name-en">TETSURO KOBAYASHI</span>
+							</h3>
+							<p class="instructor__career">全米ヨガアライアンスRYT200</p>
+							<p class="instructor__career">ヨガ指導歴6年</p>
+						</div>
+						<div class="instructor__about">
+							<p class="instructor__about-text">フィリピン　セブ島駐在中にPascale Wettsteinより師事を受け、全米ヨガアライアンスを取得。その後現地にてフィリピン人向けにスタジオでヨガレッスンを受け持つ。帰国後はホットヨガスタジオにて３年半ヨガレッスンを受け持ち、インストラクター養成講座も開催。アイアンガーヨガを主軸に学び、正確なアライメント、正しいポーズがとれるよう、身体の力学に照準を合わせた指導を行う。ビギナーレッスンから上級者レッスンまで幅広くレッスンを行っている。</p>
+						</div>
+						<div class="instructor__message">
+							<h3 class="instructor__message-title">MESSAGE</h3>
+							<p class="instructor__message-text">「ヨガって意外ときついけど終わったあとスッキリする！」、まずはそんな心地良さを感じていただきたいです。初心者も上級者も素直にヨガを楽しむことが大切だと思います。楽しみながら新しいポーズに挑戦し、少しずつステップアップする、そんなプラクティスをお手伝いいたします！体がかたくても運動神経に自信がなくても大丈夫！ヨガがさらに好きなってもらえるようなヨガを提供できるよう、私自身も日々研究しています。</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- schedule -->
+			<section class="schedule top-schedule">
+				<div class="schedule__container">
+
+					<div class="schedule__heading">
+						<!-- page-heading -->
+						<h2 class="page-heading">
+							<div class="page-heading__container">
+								<div class="page-heading__text-main">Schedule</div>
+								<div class="page-heading__text-sub">スケジュール</div>
+							</div>
+						</h2>
+					</div>
+
+					<div class="schedule__content">
+						<img src="" alt="" class="schedule__img">
+					</div>
+				</div>
+			</section>
+
+			<!-- reservation -->
+			<section class="reservation top-reservation">
+				<div class="reservation__container">
+					
+					<div class="reservation__heading">
+						<!-- page-heading -->
+						<h2 class="page-heading">
+							<div class="page-heading__container">
+								<div class="page-heading__text-main">Reservation</div>
+								<div class="page-heading__text-sub">予約</div>
+							</div>
+						</h2>
+					</div>
+
+					<div class="reservation__content">
+						<p class="reservation__text">ご希望のレッスンを選んで予約フォームへお進みください。</p>
+						<div class="reservation__box">
+							<p class="reservation__text">ご予約はレッスン開始の1時間前まで受け付けております。<br>プライベートクラスは３時間前までのご予約をお願い致します。<br>キャンセルの場合は1時間前までにお電話もしくはメールにてご連絡ください。</p>
+						</div>
+						<p class="reservation__form-mark">○:空席あり</p>
+						<p class="reservation__form-mark">△:残席わずか</p>
+						<p class="reservation__form-mark">×:満員</p>
+						<div class="reservation__reservation-form"></div>
+					</div>
+				</div>
+			</section><!-- ./price -->
+			
+			<footer class="footer">
+				<div class="footer__container">
+					<!-- ./footer-contact -->
+					<div class="footer__contact footer-contact">
+						<p class="footer-contact__text"></p>
+						<table class="footer-contact__table">
+							<tr class="footer-contact__table-row">
+								<th class="footer-contact__table-header tel-header"></th>
+								<td class="footer-contact__table-data tel-data"></td>
+							</tr>
+							<tr class="footer-contact__table-row">
+								<th class="footer-contact__table-header mail-header"></th>
+								<td class="footer-contact__table-data mail-data"></td>
+							</tr>
+						</table>
+					</div><!-- ./footer-contact -->
+					<div class="footer__sns">
+						<span class="footer__sns-facebook">○</span>
+						<span class="footer__sns-instagram">○</span>
+						<span class="footer__sns-twitter">○</span>
+					</div>
+					<div class="footer__logo">
+						<p class="footer__logo-text">POWER YOGA</p>
+						<img src="#" alt="" class="footer__logo-img">
+					</div>
+					<p class="footer__copy">©️Copyright Power Yoga Evolotus All Rights Reserved</p>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
+						

@@ -1,0 +1,94 @@
+
+// nav-header
+@use '../../setting' as s;
+@use '../../mixin' as m;
+
+.nav-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: s.$z_index_nav_header;
+    width: 100%;
+    background-color: s.$color_white;
+    
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        @include m.container("nav-header");
+        height: s.$header_height;
+        padding: 0 0 0 15px;
+        align-items: center;
+    }
+
+    &__company-logo {
+        width: 100%;
+        &-img {
+            margin: auto;
+            width: 231.5px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        @include m.responsive("tablet"){
+            display: none;
+        }
+    }
+
+    &__menu-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        padding: 0 20px;
+        line-height: s.$header_height;
+        // &:hover{
+        //     @include g.animation(hoverMenuItem, 0.5, ease, 0, 1, forwards);
+        //     @include g.keyframes("hoverMenuItem"){
+        //         from {
+        //             background-color: g.$color_white;
+        //         }
+        //         to {
+        //             background-color: g.$color_green_light;
+        //         }
+        //     }
+    }
+
+    &__toggle {
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: s.$header_height;
+        height: s.$header_height;
+        cursor: pointer;
+        background: s.$color_white;
+        z-index: +1;
+        @include m.responsive("pc") {
+            display: none;
+        }
+        // &:hover{
+        //     background-color: darken(g.$color_green,10%);
+        // }
+    }
+
+    &__toggle-line {
+        display: block;
+        width: 50%;
+        border-bottom: 2px solid s.$color_black_light;
+        margin-bottom: 10px;
+    }
+
+    &__toggle-text {
+        font-size: s.$font_size_s;
+    }
+
+}

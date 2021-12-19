@@ -1,0 +1,49 @@
+
+// base
+@use "../setting" as s;
+@use "../mixin" as m;
+
+/*
+ * HTML
+ * -------------------------------------------------------------------
+ */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: s.$font_family_base;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -webkit-appearance: none;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: s.$font_size_m;
+    line-height: s.$base_line_height;
+    letter-spacing: s.$base_letter_spacing;
+    color: s.$color_black;
+    width: 100%;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color : inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/*
+ * wrapper
+ * -------------------------------------------------------------------
+ */
+.wrapper {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    min-height: 100vh;
+    
+}
+
+
+

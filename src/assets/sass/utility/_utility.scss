@@ -1,0 +1,29 @@
+// @use '../setting' as s;
+
+// .u-link-btn {
+// 	display: block;
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+// .u-break {
+// 	&-sm {
+// 		@include s.mq(sm) {
+// 			display: none;
+// 		}
+// 	}
+
+// 	&-md {
+// 		@include s.mq(md) {
+// 			display: none;
+// 		}
+// 	}
+
+// 	&-lg {
+// 		display: none;
+
+// 		@include s.mq(md) {
+// 			display: inline;
+// 		}
+// 	}
+// }

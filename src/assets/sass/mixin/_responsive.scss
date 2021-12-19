@@ -1,0 +1,15 @@
+
+// responsive
+
+@mixin responsive($type: "pc") {
+    @if $type == "tablet" {
+        @media screen and (min-width: 600px) {
+            @content;
+        }
+    }
+    @if $type == "pc" {
+        @media screen and (min-width: 1000px) {
+            @content;
+        }
+    }
+}

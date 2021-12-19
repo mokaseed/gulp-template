@@ -1,0 +1,373 @@
+
+
+<!-- 
+header
+    nav-header
+        &__container
+            h1.&__company-logo company-logo
+                a
+                    img.&__logo-img
+            ul.&__menu
+                li.&__menu-item
+                    a.&__link
+            button.&__toggle
+                .toggle-line*3
+
+
+    nav.nav-drawer
+        .&__container
+            ul.&__menu
+                li.&__menu-item
+                    a.&__link
+                        span.&__link-text
+                        span.&__link-icon(facebook,instagram,twitter)
+            .&__bottom-link
+                p.&__bottom-link-title
+                    a.&__bottom-link-text
+        .&__overlay
+
+
+main.wrapper
+
+
+section.mainvisual
+    .&__container
+        .&__logo-img
+        p.&__text
+        a.&__contact-link*2
+
+//news
+section.news top-news
+    .&__container
+        .&__heading
+
+            h2.page-heading
+                .&__container
+                    .&__text-main
+                    .&__text-sub
+        
+        .&__list
+            article.&__list-item //ここから下で一つのアイテム
+
+                .news-item
+                    figure.&__thumbnail
+                        img.&__thumbnail-img
+                    ul.&__content
+                        li.&__content-date
+                        li.&__content-title
+                        li.&__content-text
+                    a.&__content-btn
+                    
+//about
+section.about top-about
+    .&__container
+        dl.&__content
+            dt.&__content-title
+            dd.&__content-text
+
+//instagram
+section.instagram top-instagram
+    .&__container
+        .&__heading
+
+            h2.page-heading
+                .&__container
+                    .&__text-main
+                    .&__text-sub
+
+        .&__content
+            プラグイン
+
+
+//lessons
+section.lessons top-lessons
+    .&__contaner
+        .&__heading
+
+        h2.page-heading
+            .&__container
+                .&__text-main
+                .&__text-sub
+        
+        .&__content
+
+            ul.lessons-list
+                li.&__content
+                    dl.&__lesson
+                        dt.&__lesson-title
+                        dd.&__lesson-text
+            
+            .lesson-message
+                h3.&__title
+                figure.&__thumbnail
+                    img.&__thumbnail-img
+                p.&__text
+
+//price
+sction.price top-price
+    .&__contaner
+        .&__heading
+
+        h2.page-heading
+            .&__container
+                .&__text-main
+                .&__text-sub
+        
+        .&__content
+
+            .drop-in
+                .drop-in__box price-box
+                    p.drop-in__box-top price-box__top
+                        span.drop-in__menu price-box__menu
+                        span.drop-in__frequency price-box__main-text
+                    p.drop-in__box-bottom price-box__bottom
+                        span.drop-in__time price-box__sub-text
+                        span.drop-in__price price-box__price
+                p.drop-in__text
+
+            .coupon
+                h3.&__heading article-heading
+                p.article-heading__text
+
+                ul.&__list
+                    li.&__list-item
+                        .&__box price-box
+                            figure.&__thumbnail
+                                img.&__thumbnail-img
+                            p.&__box-top price-box__top
+                                span.&__frequency price-box__main-text
+                                span.&__period price-box__sub-text
+                            p.&__box-bottom price-box__bottom
+                                span.&__price price-box__price
+                p.&__note
+
+            .private
+                h3.&__heading article-heading
+                    .&__alone-box price-box
+                        p.&__alone-box-top price-box__top
+                            span.&__alone-box-frequency price-box__main-text
+                        p.&__alone-box-bottom box__bottom
+                            span.&__alone-box-price price-box__price
+
+                    .&__multiple-people
+                        p.&__multiple-people-box-top price-box__top
+                            span.&__multiple-people-box-frequency price-box__main-text
+                        p.&__multiple-people-box-text price-box__bottom
+                            span.&__multiple-people-note price-box__sub-text
+                            span.&__multiple-people-price price-box__price
+                    
+                    p.&__text
+
+
+//trial
+section.trial top-trial
+    .&__contaner
+        .&__heading
+
+        h2.page-heading
+            .&__container
+                .&__text-main
+                .&__text-sub
+        
+        .&__content
+
+            .trial-box
+                p.&__title
+                p.&__menu
+                    span.&__price
+                p.&__60minute-note
+                p.&__80minute-note
+            
+            ul.trial-step
+                li.&__list-item
+                    .&__box
+                        h4.&__title
+                        p.&__text
+                    .&__note(3,4のみ)
+                    .&__belongings(4のみ)
+
+//access
+section.access top-access
+    .&__contaner
+        .&__heading
+
+        h2.page-heading
+            .&__container
+                .&__text-main
+                .&__text-sub
+        
+        .&__content
+
+            .google-map
+                .&__link
+                .&__company-logo company-logo
+                .&__address
+                .&__parking
+
+            .parking
+                h3.&__heading article-heading
+                img.&__map-img
+
+            .directions
+                img.&__img
+
+
+//instrucor
+section.instructor top-instructor
+    .&__contaner
+        .&__heading
+
+        h2.page-heading
+            .&__container
+                .&__text-main
+                .&__text-sub
+        
+        .&__content
+
+            figure.&__thumbnail
+                img.&__thumbnail-img
+            h3.&__name
+                span.&__name-en
+            p.&__career
+                span.&__career-hyphen
+            .&__about
+                p.&__about-text
+            .&__message
+                h4.&__message-title
+                p.&__message-text
+
+
+//schedule
+section.schedule top-schedule
+    .&__contaner
+        .&__heading
+
+        h2.page-heading
+            .&__container
+                .&__text-main
+                .&__text-sub
+        
+        .&__content
+
+            img.&__schedule-img
+
+
+//reservation
+section.reservation
+    .&__contaner
+        .&__heading
+
+        h2.page-heading
+            .&__container
+                .&__text-main
+                .&__text-sub
+        
+        .&__content
+
+            p.&__text
+            .&__box
+                p.&__box-text
+
+            .reservation-form
+                p.&__text
+                .&__form
+                プラグイン
+
+
+//footer
+footer.footer
+    .&__container
+        .&__contact footer-contact
+            p.footer-contact__text
+            table.footer-contact__table
+                tr.footer-contact__table-row
+                    th.footer-contact__table-header tel-header mail-header
+                    td.footer-contact__table-data tel-data mail-data
+        .&__sns footer-sns
+            span.footer-sns__icon
+
+        .&__logo
+            p.&__logo-text
+            img.&__logo-img
+
+        p.&__copy
+
+
+                    
+                    
+-->
+
+<!-- 
+
+//online
+section.online
+    .&__contaner
+        .&__heading
+
+        h2.page-heading
+            .&__container
+                .&__text-main
+                .&__text-sub
+        
+        .&__content
+
+            .&__price-box
+                p.&__price-box-top
+                    span.&__price-box-time price-box__main-text
+                    span.&__price-box-price price-box__price
+            .&__text
+
+            h3.&__heading article-heading
+
+            ul.&__step-list
+                li.&__item
+                    h4.&__title
+                    .&__box
+                        p.&__text
+                        .&__contact-link-wrap(step1)
+                            a.&__contact-link(step1)
+                            figure.&__thumbnail
+                            p.&__thumbnail-text
+                            img.&__thumbnail-img
+                        p.&__text(step1,3)
+-->
+
+<!-- 
+
+//event
+section.event
+    .&__contaner
+        .&__heading
+
+        h2.page-heading
+            .&__container
+                .&__text-main
+                .&__text-sub
+        
+        .&__content
+
+
+            .&__price-box price-box
+                p.&__price-box-top price-box__top
+                    span.&__price-box-time price-box__main-text
+                    span.&__price-box-price price-box__price
+                p.&__price-box-bottom price-box__bottom
+                    span.&__price-box-note price-box__sub-text
+            p.__note
+
+            p.&__text
+
+            .&__area-box
+                p.&__area-box-title
+                p.&__area-box-text
+            p.__note
+
+            &.__contact
+                p.&__contact-text
+                .&__contact-box
+                    table.footer-contact__table
+                        tr.footer-contact__table-row
+                            th.footer-contact__table-header tel-header mail-header
+                            td.footer-contact__table-data tel-data mail-data
+
+-->

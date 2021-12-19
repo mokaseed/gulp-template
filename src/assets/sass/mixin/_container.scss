@@ -1,0 +1,58 @@
+//container
+
+@use '../setting' as s;
+@use "./responsive" as r;
+
+@mixin container($type: "default") {
+    
+    @if $type == "default" {
+        margin: 0 auto;
+        width: 95%;
+        max-width: s.$content_width_sp;
+        @include r.responsive("tablet"){
+            max-width: s.$content_width_tablet;
+        }
+        @include r.responsive("pc"){
+            max-width: s.$content_width_pc;
+            width: 90%;
+        }
+
+    } @else if $type == "mainview" {
+        display: flex;
+        height: 95vh;
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        max-width: s.$content_width_sp;
+        @include r.responsive("tablet"){
+            max-width: s.$content_width_tablet;
+        }
+        @include r.responsive("pc"){
+            max-width: s.$content_width_pc;
+            width: 90%;
+        }
+
+    } @else if $type == "nav-header" {
+        margin: 0 auto;
+        width: 100%;
+        max-width: s.$content_width_sp;
+        @include r.responsive("tablet"){
+            max-width: s.$content_width_tablet;
+        }
+        @include r.responsive("pc"){
+            max-width: s.$content_width_pc;
+        }
+        
+    } @else if $type == "footer" {
+        margin: 0 auto;
+        height: 47.45rem;
+        width: 100%;
+        max-width: s.$content_width_sp;
+        @include r.responsive("tablet"){
+            max-width: s.$content_width_tablet;
+        }
+        @include r.responsive("pc"){
+            max-width: s.$content_width_pc;
+        }
+    }
+}
