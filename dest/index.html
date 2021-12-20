@@ -35,6 +35,8 @@
 			defer
 		></script>
 		<script src="js/bundle.min.js" defer></script>
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	</head>
 	<body>
 		<header class="header">
@@ -148,20 +150,20 @@
 			</nav>
 		</header>
 		
-		<div class="bottom-fixed">
-			<a href="" class="bottom-fixed__contact-link">体験レッスン</a>
-			<a href="" class="bottom-fixed__contact-link">WEB予約</a>
-		</div>
+		<nav class="cv-bottom-btn">
+			<a href="" class="cv-bottom-btn__link">体験レッスン</a>
+			<a href="" class="cv-bottom-btn__link">WEB予約</a>
+		</nav>
 
 		<main class="wrapper">
 
-			<!-- mainview -->
-			<section class="mainview">
-				<div class="mainview__container">
-					<img src="メインビュー画像" alt="" class="mainview__logo-img">
-					<p class="mainview__text">ヨガをもっと<br>自由に楽しく</p>
+			<!-- top-mainview -->
+			<section class="top-mainview">
+				<div class="top-mainview__container">
+					<img src="images/mainview-logo.png" alt="" class="top-mainview__logo-img">
+					<p class="top-mainview__text">ヨガをもっと<br><span class="top-mainview__text_bottom">自由に楽しく</span></p>
 				</div>
-			</section><!-- ./mainview -->
+			</section><!-- ./top-mainview -->
 
 			<!-- news -->
 			<section class="news top-news">
@@ -180,32 +182,28 @@
 					<div class="news__list">
 
 						<article class="news__list-item">
-							<div class="news-item">
-								<figure class="news__thumbnail">
-									<img src="#" alt="" class="news__thumbnail-img">
-								</figure>
-								<div class="news__content">
-									<p class="news__content-date">2021.5.11</p>
-									<h3 class="news__content-title">タイトルをいれる</h3>
-									<p class="news__content-text">ここにテキストをいれる。ここにテキストをいれる。ここにテキストをいれる。</p>
-									<a href="" class="news__content-btv">詳しくみる</a>
-								</div>
+							<figure class="news__thumbnail">
+								<img src="images/news-img.png" alt="" class="news__thumbnail-img">
+							</figure>
+							<div class="news__content">
+								<p class="news__content-date">2021.5.11</p>
+								<h3 class="news__content-title">タイトルをいれる</h3>
+								<p class="news__content-text">ここにテキストをいれる。ここにテキストをいれる。ここにテキストを</p>
+								<a href="" class="news__content-btn">詳しくみる</a>
 							</div>
 						</article>
 
-						<article class="news__list-item">
-							<div class="news-item">
-								<figure class="news__thumbnail">
-									<img src="#" alt="" class="news__thumbnail-img">
-								</figure>
-								<div class="news__content">
-									<p class="news__content-date">2021.5.11</p>
-									<h3 class="news__content-title">タイトルをいれる</h3>
-									<p class="news__content-text">ここにテキストをいれる。ここにテキストをいれる。ここにテキストをいれる。</p>
-									<a href="" class="news__content-btv">詳しくみる</a>
-								</div>
+						<!-- <article class="news__list-item">
+							<figure class="news__thumbnail">
+								<img src="#" alt="" class="news__thumbnail-img">
+							</figure>
+							<div class="news__content">
+								<p class="news__content-date">2021.5.11</p>
+								<h3 class="news__content-title">タイトルをいれる</h3>
+								<p class="news__content-text">ここにテキストをいれる。ここにテキストをいれる。ここにテキストをいれる。</p>
+								<a href="" class="news__content-btn">詳しくみる</a>
 							</div>
-						</article>
+						</article> -->
 
 					</div><!-- ./news__list -->
 				</div>
@@ -235,6 +233,9 @@
 							</div>
 						</h2>
 					</div>
+					<div class="instagram__content">プラグインで表示</div>
+					<p class="instagram__icon"><i class="instagram__icon-fab fab fa-instagram"></i>
+					<span class="instagram__icon-text">poweryogaevolotus</span></p>
 				</div>
 			</section><!-- ./instagram -->
 
@@ -279,9 +280,12 @@
 						<!-- lessons-message -->
 						<div class="lessons-message">
 							<div class="lessons-message__title-wrapper">
-								<h3 class="lessons-message__title">自分のやりたいヨガを<br>心ゆくまで</h3>
+								<!-- <h3 class="lessons-message__title"><span class="lessons-message__title_border">自分のやりたいヨガを</span><br><span class="lessons-message__title_border">心ゆくまで</span></h3> -->
+								<h3 class="lessons-message__title">
+									<span class="lessons-message__title_border">自分のやりたいヨガを</span><br>
+									<span class="lessons-message__title_border">心ゆくまで</span></h3>
 								<figure class="lessons-message__thumbnail">
-									<img src="" alt="" class="lessons-message__thumbnail-img">
+									<img src="images/lesson-img.png" alt="" class="lessons-message__thumbnail-img">
 								</figure>
 							</div>
 							<p class="lessons-message__text">大人数スタジオや独学ではわかりにくいポイントも丁寧にお教えします。 カラダは１人ひとりが全く違った特別なもの。ヨガをする上でも、自分１人にフォーカスしたパーソナルトレーニングを受けることで、普段見過ごしがちなカラダの使い方を正しく身につけることに繋がります。初心者の方は、じっくり自分だけのペースで進められるので安心です。また、ヨガにある程度慣れている方は、やってみたいポーズ、苦手なポーズを練習したり、強度の高いレッスンをするのもおすすめです。</p>

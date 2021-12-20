@@ -121,6 +121,14 @@ const browserSyncFunc = (done) => {
 			index: 'index.html',
 		},
 	});
+	// WordPress使用時にコメントアウト外す
+	// browserSync.init({
+	// 	files: ["./**"],
+	// 	port : 80,
+	// 	proxy : "localhost:8888",  // 変更
+	// 	notify: false,
+	// 	open: "external",
+	// });
 	done();
 };
 

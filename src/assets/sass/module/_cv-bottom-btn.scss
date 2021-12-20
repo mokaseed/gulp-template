@@ -1,0 +1,24 @@
+//cv-bottom-btn
+
+@use "../mixin" as m;
+@use "../setting" as s;
+
+.cv-bottom-btn {
+
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: s.$color_white;
+    
+    &__link {
+        width: 50%;
+        display: block;
+        text-align: center;
+        line-height:87.5px;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #7C7C7C;
+        height: 87.5px;
+    }
+}

@@ -1,0 +1,28 @@
+
+// page-heading
+
+@use "../mixin" as m;
+@use "../setting" as s;
+
+.page-heading {
+
+    &__container {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    
+    &__text-main {
+        font-size: 4.4rem;
+        font-family: s.$font_page_heading_main;
+        margin-bottom: 1rem;
+        // @include m.responsive("pc") {
+        //     font-size: 4rem;
+        // }
+    }
+    &__text-sub {
+        font-size: 2.5rem;
+    //     @include m.responsive("sp") {
+    //         font-size: ;
+    //     }
+    }
+}
