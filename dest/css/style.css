@@ -112,14 +112,20 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.footer__container {
-  margin: 0 auto 8.7rem;
+.footer {
+  margin: 0 auto;
   height: 47rem;
   width: 100%;
+  padding-bottom: 8.7rem;
   background-color: #2D765A;
+}
+.footer__container {
   text-align: center;
-  padding: 6.8rem 8.2rem;
+  padding: 6.8rem 0;
   color: #FFFFFF;
+  max-width: 40rem;
+  width: 95%;
+  margin: 0 auto;
 }
 .footer__sns {
   margin-bottom: 10rem;
@@ -298,7 +304,7 @@ select {
   display: block;
   text-align: center;
   line-height: 87.5px;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   border: 2px solid #7C7C7C;
   height: 87.5px;
@@ -499,7 +505,8 @@ select {
   }
 }
 .instagram__content {
-  width: 45.75rem;
+  max-width: 45.75rem;
+  width: 100%;
   height: 45.75rem;
   border: 1px solid #000;
 }
@@ -693,11 +700,15 @@ select {
 }
 .news__list-item {
   height: 51.7rem;
-  width: 37.05rem;
+  max-width: 37.05rem;
+  width: 100%;
   background-color: #FFFFFF;
 }
 .news__thumbnail {
   padding: 1.55rem;
+}
+.news__thumbnail-img {
+  width: 100%;
 }
 .news__content {
   padding: 0 3.4rem;
@@ -941,6 +952,7 @@ select {
   margin-right: auto;
   max-width: 428px;
   max-height: 180px;
+  width: 100%;
 }
 .top-mainview__text {
   color: #FFFFFF;
@@ -1002,7 +1014,8 @@ select {
 .trial-box__menu::after {
   display: block;
   content: "";
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   height: 7px;
   background: #FFE86A;
   position: absolute;

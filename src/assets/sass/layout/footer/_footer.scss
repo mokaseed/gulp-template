@@ -4,13 +4,16 @@
 @use '../../mixin' as m;
 
 .footer {
-
+    @include m.container("footer");
+    background-color: s.$color_green_dark;
+    
     &__container {
-        @include m.container("footer");
-        background-color: s.$color_green_dark;
         text-align: center;
-        padding: 6.8rem 8.2rem;
+        padding: 6.8rem 0;
         color: s.$color_white;
+        max-width: 40rem;
+        width: 95%;
+        margin: 0 auto;
     }
 
     &__sns {
@@ -72,7 +75,7 @@
     &__box {
         border: 1px solid s.$color_white;
         padding: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom:3rem;
     }
 
     &__text {

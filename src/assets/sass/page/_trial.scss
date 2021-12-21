@@ -37,7 +37,8 @@
         &::after{
             display: block;
             content: "";
-            width: 300px;
+            max-width: 300px;
+            width: 100%;
             height: 7px;
             background: #FFE86A;
             position: absolute;
