@@ -15,6 +15,9 @@
 
     &__sns {
         margin-bottom: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__sns-icon {
@@ -36,7 +39,7 @@
     &__sns-instagram {
         font-size: 4.5rem;
         display: inline-block;
-        // vertical-align: middle;
+        vertical-align: top;
     }
 
     &__logo {

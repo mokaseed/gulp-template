@@ -123,6 +123,15 @@ select {
 }
 .footer__sns {
   margin-bottom: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer__sns-icon {
   margin: 0 2rem;
@@ -140,6 +149,7 @@ select {
 .footer__sns-instagram {
   font-size: 4.5rem;
   display: inline-block;
+  vertical-align: top;
 }
 .footer__logo {
   display: -webkit-box;
