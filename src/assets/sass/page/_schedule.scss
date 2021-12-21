@@ -11,4 +11,11 @@
         @include m.container("default");
     }
 
+    &__heading {
+        margin-bottom: 4rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
 }

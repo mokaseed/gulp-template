@@ -5,10 +5,78 @@
 
 .instructor {
 
+    position: relative;
+
     background: s.$color_white;
 
     &__container {
         @include m.container("default");
+    }
+
+    &__heading {
+        &::after {
+            position: absolute;
+            right: 0;
+            content: "";
+            width: 380px;
+            height: 263px;
+            border: s.$color-green;
+            background: s.$color-green;
+        }
+    }
+
+    &__thumbnail {
+        width: 100%;
+        margin-bottom: 40rem;
+    }
+    
+    &__thumbnail-img {
+        width: 100%;
+        max-width: 474px;
+        position: absolute;
+        left: 0;
+        top: 290px;
+        z-index: +1;
+    }
+
+    &__profile {
+        padding: 0 2rem;
+        margin-bottom: 5rem;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        &-en {
+            font-size: 2.25rem;
+            padding-left: 2rem;
+        }
+    }
+
+    &__career {
+        font-size: 2.1rem;
+        &-hyphen {
+            color: #45906A;
+            padding-right: 1rem;
+        }
+    }
+    
+    &__about {
+        font-size: 2.1rem;
+        line-height: 1.8;
+        margin-bottom: 4.7rem;
+    }
+
+    &__message-title {
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    &__message-text {
+        font-size: 2.1rem;
+        line-height: 1.8;
     }
 
 }

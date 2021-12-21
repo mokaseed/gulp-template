@@ -506,7 +506,7 @@
 										<p class="trial-step__text">当日は、ヨガのできる動きやすい服装にあらかじめ着替えて、レッスン開始時刻の15分前にお越しください。</p>
 									</div>
 									<p class="trial-step__note">ヨガマットは無料レンタルがございます。<br>ご自身のマットをお持ちいただいても構いません。</p>
-									<img src="#" alt="" class="trial-step__note-img">
+									<img src="images/trial-baggage.png" alt="" class="trial-step__note-img">
 								</li>
 								<li class="trial-step__list-item">
 									<div class="trial-step__box">
@@ -535,21 +535,23 @@
 						</h2>
 					</div>
 
-					<div class="access__container">
+					<div class="access__content">
 
-						<div class="google-map">
-							<div class="google-map__link"></div>
-							<img src="" alt="" class="google-map__company-logo company-logo">
+						<!-- google-map -->
+						<div class="access__google-map google-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.515275510895!2d139.05321291511697!3d36.37251829935672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ef2db41247913%3A0x17c3ee684ee44c0a!2z44CSMzcxLTA4MzEg576k6aas55yM5YmN5qmL5biC5bCP55u45pyo55S677yT77yS77yX!5e0!3m2!1sja!2sjp!4v1640093620561!5m2!1sja!2sjp" width="430" height="266" style="border:0;" allowfullscreen="" loading="lazy" class="google-map__link"></iframe>
+							<img src="images/company-logo.png" alt="" class="google-map__company-logo company-logo">
 							<p class="google-map__address">〒371-0831<br>群馬県前橋市小相木町３２７ タカゼンビル２階</p>
 							<p class="google-map__parking">駐車場　店舗裏に５台有</p>
 						</div>
 
-						<div class="parking">
+						<!-- parking -->
+						<div class="access__parking parking">
 							<div class="post-heading-wrapper">
-								<h3 class="coupon__heading post-heading">駐車場</h3>
+								<h3 class="access__heading post-heading">駐車場</h3>
 							</div>
-							<img src="" alt="" class="parking__map-img">
-							<img src="" alt="" class="parking__directions-img">
+							<img src="images/access-parking.png" alt="" class="parking__map-img">
+							<img src="images/parking-directions.png" alt="" class="parking__directions-img">
 						</div>
 
 					</div>
@@ -572,14 +574,14 @@
 
 					<div class="instructor__content">
 						<figure class="instructor__thumbnail">
-							<img src="" alt="" class="instructor__thumbnail-img">
+							<img src="images/instructor.png" alt="" class="instructor__thumbnail-img">
 						</figure>
 						<div class="instructor__profile">
 							<h3 class="instructor__name">小林哲朗
 								<span class="instructor__name-en">TETSURO KOBAYASHI</span>
 							</h3>
-							<p class="instructor__career">全米ヨガアライアンスRYT200</p>
-							<p class="instructor__career">ヨガ指導歴6年</p>
+							<p class="instructor__career"><span class="instructor__career-hyphen">ー</span>全米ヨガアライアンスRYT200</p>
+							<p class="instructor__career"><span class="instructor__career-hyphen">ー</span>ヨガ指導歴6年</p>
 						</div>
 						<div class="instructor__about">
 							<p class="instructor__about-text">フィリピン　セブ島駐在中にPascale Wettsteinより師事を受け、全米ヨガアライアンスを取得。その後現地にてフィリピン人向けにスタジオでヨガレッスンを受け持つ。帰国後はホットヨガスタジオにて３年半ヨガレッスンを受け持ち、インストラクター養成講座も開催。アイアンガーヨガを主軸に学び、正確なアライメント、正しいポーズがとれるよう、身体の力学に照準を合わせた指導を行う。ビギナーレッスンから上級者レッスンまで幅広くレッスンを行っている。</p>
@@ -607,7 +609,7 @@
 					</div>
 
 					<div class="schedule__content">
-						<img src="" alt="" class="schedule__img">
+						<img src="images/schedule.png" alt="" class="schedule__img">
 					</div>
 				</div>
 			</section>
@@ -629,12 +631,20 @@
 					<div class="reservation__content">
 						<p class="reservation__text">ご希望のレッスンを選んで予約フォームへお進みください。</p>
 						<div class="reservation__box">
-							<p class="reservation__text">ご予約はレッスン開始の1時間前まで受け付けております。<br>プライベートクラスは３時間前までのご予約をお願い致します。<br>キャンセルの場合は1時間前までにお電話もしくはメールにてご連絡ください。</p>
+							<p class="reservation__box-text">ご予約はレッスン開始の1時間前まで受け付けております。</p>
+							<p class="reservation__box-text">プライベートクラスは３時間前までのご予約をお願い致します。</p>
+							<p class="reservation__box-text">キャンセルの場合は1時間前までにお電話もしくはメールにてご連絡ください。</p>
 						</div>
-						<p class="reservation__form-mark">○:空席あり</p>
-						<p class="reservation__form-mark">△:残席わずか</p>
-						<p class="reservation__form-mark">×:満員</p>
-						<div class="reservation__reservation-form"></div>
+						<div class="reservation__reservation-form-wrapper">
+							<div class="reservation__form-mark-wrapper">
+								<p class="reservation__form-mark">○:空席あり</p>
+								<p class="reservation__form-mark">△:残席わずか</p>
+								<p class="reservation__form-mark">×:満員</p>
+							</div>
+							<div class="reservation__reservation-form">
+								<img src="images/reservation.png" alt="">
+							</div>
+						</div>
 					</div>
 				</div>
 			</section><!-- ./price -->
@@ -643,26 +653,28 @@
 				<div class="footer__container">
 					<!-- ./footer-contact -->
 					<div class="footer__contact footer-contact">
-						<p class="footer-contact__text"></p>
-						<table class="footer-contact__table">
-							<tr class="footer-contact__table-row">
-								<th class="footer-contact__table-header tel-header"></th>
-								<td class="footer-contact__table-data tel-data"></td>
-							</tr>
-							<tr class="footer-contact__table-row">
-								<th class="footer-contact__table-header mail-header"></th>
-								<td class="footer-contact__table-data mail-data"></td>
-							</tr>
-						</table>
+						<div class="footer-contact__box">
+							<p class="footer-contact__text">ご不明な点はお気軽にお問い合わせください</p>
+							<table class="footer-contact__table">
+								<tr class="footer-contact__table-row">
+									<th class="footer-contact__table-header footer-contact__tel-header">TEL</th>
+									<td class="footer-contact__table-data footer-contact__tel-data">027-898-2667</td>
+								</tr>
+								<tr class="footer-contact__table-row">
+									<th class="footer-contact__table-header footer-contact__mail-header">E-mail</th>
+									<td class="footer-contact__table-data footer-contact__mail-data">info@poweryoga-evolotus.com</td>
+								</tr>
+							</table>
+						</div>
 					</div><!-- ./footer-contact -->
 					<div class="footer__sns">
-						<span class="footer__sns-facebook">○</span>
-						<span class="footer__sns-instagram">○</span>
-						<span class="footer__sns-twitter">○</span>
+						<span class="footer__sns-facebook footer__sns-icon"><i class="fab fa-facebook-f"></i></span>
+						<span class="footer__sns-instagram footer__sns-icon"><i class="fab fa-instagram"></i></span>
+						<span class="footer__sns-twitter footer__sns-icon"><i class="fab fa-twitter"></i></span>
 					</div>
 					<div class="footer__logo">
 						<p class="footer__logo-text">POWER YOGA</p>
-						<img src="#" alt="" class="footer__logo-img">
+						<img src="images/footer-logo.png" alt="" class="footer__logo-img">
 					</div>
 					<p class="footer__copy">©️Copyright Power Yoga Evolotus All Rights Reserved</p>
 				</div>
@@ -670,4 +682,3 @@
 		</main>
 	</body>
 </html>
-						

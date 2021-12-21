@@ -17,7 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.8rem;
   line-height: 1.8;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.09rem;
   color: #000000;
   width: 100%;
   margin: auto;
@@ -112,6 +112,86 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.footer__container {
+  margin: 0 auto 8.7rem;
+  height: 47rem;
+  width: 100%;
+  background-color: #2D765A;
+  text-align: center;
+  padding: 6.8rem 8.2rem;
+  color: #FFFFFF;
+}
+.footer__sns {
+  margin-bottom: 10rem;
+}
+.footer__sns-icon {
+  margin: 0 2rem;
+}
+.footer__sns-facebook, .footer__sns-twitter {
+  color: #2D765A;
+  background: #FFFFFF;
+  border-radius: 50%;
+  font-size: 2.3rem;
+  line-height: 4rem;
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+}
+.footer__sns-instagram {
+  font-size: 4.5rem;
+  display: inline-block;
+}
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.footer__logo-text {
+  font-size: 2.25rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer__logo-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.footer__copy {
+  font-size: 1.3rem;
+}
+
+.footer-contact__box {
+  border: 1px solid #FFFFFF;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+.footer-contact__text {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.footer-contact__table {
+  font-weight: bold;
+  margin: 0 auto;
+}
+.footer-contact__tel-header {
+  font-size: 3.5rem;
+}
+.footer-contact__tel-data {
+  font-size: 3.5rem;
+}
+.footer-contact__table-data {
+  -moz-text-align-last: left;
+       text-align-last: left;
+  padding-left: 1rem;
+}
+.footer-contact__mail-data {
+  letter-spacing: 0;
+}
+
 .nav-drawer {
   display: none;
 }
@@ -201,6 +281,7 @@ select {
   bottom: 0;
   width: 100%;
   background-color: #FFFFFF;
+  z-index: 100;
 }
 .cv-bottom-btn__link {
   width: 50%;
@@ -273,6 +354,19 @@ select {
   font-weight: bold;
 }
 
+.instagram, .lessons, .price, .trial, .access, .instructor, .schedule {
+  position: relative;
+}
+.instagram__heading::before, .lessons__heading::before, .price__heading::before, .trial__heading::before, .access__heading::before, .instructor__heading::before, .schedule__heading::before {
+  position: absolute;
+  right: 50%;
+  top: -40px;
+  content: "";
+  background: #000000;
+  width: 2px;
+  height: 77px;
+}
+
 .about {
   background-color: #F2F5F5;
 }
@@ -281,6 +375,7 @@ select {
   width: 95%;
   padding: 100px 0 120px;
   max-width: 462.5px;
+  position: relative;
 }
 @media screen and (min-width: 600px) {
   .about__container {
@@ -298,6 +393,15 @@ select {
   font-weight: bold;
   letter-spacing: 0.0016rem;
   margin-bottom: 6.8rem;
+}
+.about__content-title::before {
+  position: absolute;
+  right: 50%;
+  top: -40px;
+  content: "";
+  background: #000000;
+  width: 2px;
+  height: 77px;
 }
 .about__content-text {
   font-size: 2.4rem;
@@ -324,6 +428,44 @@ select {
     max-width: 1200px;
     width: 90%;
   }
+}
+.access__google-map {
+  padding: 25px 15px;
+  margin-bottom: 102px;
+}
+.access__heading {
+  padding: 0 5rem;
+  margin-bottom: 4.35rem;
+}
+
+.google-map {
+  background: #FFFFFF;
+}
+.google-map__link {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.google-map__company-logo {
+  width: 215px;
+  margin-bottom: 18px;
+}
+.google-map__address {
+  font-weight: bold;
+  margin-bottom: 18px;
+  letter-spacing: 0.045rem;
+}
+.google-map__parking {
+  font-weight: bold;
+  letter-spacing: 0.045rem;
+}
+
+.parking__map-img {
+  width: 100%;
+  margin-bottom: 94px;
+}
+.parking__directions-img {
+  width: 100%;
 }
 
 .instagram {
@@ -364,6 +506,7 @@ select {
 }
 
 .instructor {
+  position: relative;
   background: #FFFFFF;
 }
 .instructor__container {
@@ -382,6 +525,61 @@ select {
     max-width: 1200px;
     width: 90%;
   }
+}
+.instructor__heading::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 380px;
+  height: 263px;
+  border: #DBE6D2;
+  background: #DBE6D2;
+}
+.instructor__thumbnail {
+  width: 100%;
+  margin-bottom: 40rem;
+}
+.instructor__thumbnail-img {
+  width: 100%;
+  max-width: 474px;
+  position: absolute;
+  left: 0;
+  top: 290px;
+  z-index: 1;
+}
+.instructor__profile {
+  padding: 0 2rem;
+  margin-bottom: 5rem;
+}
+.instructor__name {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.instructor__name-en {
+  font-size: 2.25rem;
+  padding-left: 2rem;
+}
+.instructor__career {
+  font-size: 2.1rem;
+}
+.instructor__career-hyphen {
+  color: #45906A;
+  padding-right: 1rem;
+}
+.instructor__about {
+  font-size: 2.1rem;
+  line-height: 1.8;
+  margin-bottom: 4.7rem;
+}
+.instructor__message-title {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.instructor__message-text {
+  font-size: 2.1rem;
+  line-height: 1.8;
 }
 
 .lessons {
@@ -630,7 +828,7 @@ select {
 .reservation__container {
   margin: 0 auto;
   width: 95%;
-  padding: 100px 0 120px;
+  padding: 0 0 120px;
   max-width: 462.5px;
 }
 @media screen and (min-width: 600px) {
@@ -643,6 +841,42 @@ select {
     max-width: 1200px;
     width: 90%;
   }
+}
+.reservation__text {
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.reservation__box {
+  background: #FFFFFF;
+  padding: 3rem 0;
+  margin-bottom: 11.4rem;
+}
+.reservation__box-text {
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.reservation__box-text:nth-of-type(-n+2) {
+  margin-bottom: 2rem;
+}
+.reservation__content {
+  margin-bottom: 5rem;
+}
+.reservation img {
+  border: 0.5px solid gray;
+}
+.reservation__form-mark-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.reservation__form-mark {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
 .schedule {
@@ -664,6 +898,12 @@ select {
     max-width: 1200px;
     width: 90%;
   }
+}
+.schedule__heading {
+  margin-bottom: 4rem;
+}
+.schedule__img {
+  width: 100%;
 }
 
 .top-mainview__container {
@@ -779,14 +1019,14 @@ select {
 .trial-step__list {
   padding: 0;
 }
+.trial-step__list-item:nth-of-type(-n +3) {
+  margin-bottom: 8rem;
+}
 .trial-step__box {
   background-color: #FFFFFF;
   padding: 2.8rem 1rem;
   position: relative;
-}
-.trial-step__box:nth-of-type(2) {
-  margin-bottom: 8rem;
-  background-color: aqua;
+  margin-bottom: 1rem;
 }
 .trial-step__title {
   position: absolute;
@@ -806,5 +1046,14 @@ select {
 .trial-step__text {
   font-weight: bold;
   letter-spacing: 0.045rem;
+}
+.trial-step__note {
+  width: 95%;
+  margin: 0 auto 1rem;
+  letter-spacing: 0.045rem;
+  line-height: 1.8;
+}
+.trial-step__note-img {
+  width: 95%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,9 +18,21 @@
             width: 90%;
         }
 
+    } @else if $type == "reservation" {
+        margin: 0 auto;
+        width: 95%;
+        padding: 0 0 120px;
+        max-width: s.$content_width_sp;
+        @include r.responsive("tablet"){
+            max-width: s.$content_width_tablet;
+        }
+        @include r.responsive("pc"){
+            max-width: s.$content_width_pc;
+            width: 90%;
+        }
+
     } @else if $type == "mainview" {
         display: flex;
-        // height: 100vh;
         height: 1021.5px;
         width: 100%;
         margin: 0;
@@ -31,15 +43,8 @@
         width: 100%;
         
     } @else if $type == "footer" {
-        margin: 0 auto;
-        height: 47.45rem;
+        margin: 0 auto 8.7rem;
+        height: 47rem;
         width: 100%;
-        max-width: s.$content_width_sp;
-        @include r.responsive("tablet"){
-            max-width: s.$content_width_tablet;
-        }
-        @include r.responsive("pc"){
-            max-width: s.$content_width_pc;
-        }
     }
 }

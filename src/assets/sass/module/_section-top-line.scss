@@ -1,0 +1,22 @@
+// section-top-line 
+
+@use '../setting' as s;
+@use '../mixin' as m;
+
+.instagram, .lessons, .price, .trial, .access, .instructor, .schedule {
+
+    position: relative;
+
+    &__heading {
+        &::before {
+            position: absolute;
+            right: 50%;
+            top: -40px;
+            content: "";
+            background: s.$color_black;
+            width: 2px;
+            height: 77px;
+        }
+    }
+
+} 

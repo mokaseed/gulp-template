@@ -9,6 +9,7 @@
 
     &__container {
         @include m.container("default");
+        position: relative;
     }
 
     &__content-title {
@@ -16,6 +17,15 @@
         font-weight: bold;
         letter-spacing: 0.0016rem;
         margin-bottom: 6.8rem;
+        &::before {
+            position: absolute;
+            right: 50%;
+            top: -40px;
+            content: "";
+            background: s.$color_black;
+            width: 2px;
+            height: 77px;
+        }
     }
 
     &__content-text {
