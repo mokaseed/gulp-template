@@ -1,0 +1,21 @@
+
+// post-heading
+
+@use "../mixin" as m;
+@use "../setting" as s;
+
+.post-heading-wrapper {
+    text-align: center;
+}
+
+.post-heading {
+    display: inline-block;
+    font-size: 2.4rem;
+    border: 2px solid #000000;
+    border-radius: 51px;
+    // width: 18.55rem;
+    height: 5.05rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 5.05rem;
+}

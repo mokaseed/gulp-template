@@ -1,0 +1,14 @@
+// instructor
+
+@use "../mixin" as m;
+@use "../setting" as s;
+
+.instructor {
+
+    background: s.$color_white;
+
+    &__container {
+        @include m.container("default");
+    }
+
+}

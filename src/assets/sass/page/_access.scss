@@ -1,0 +1,14 @@
+// access
+
+@use "../mixin" as m;
+@use "../setting" as s;
+
+.access {
+
+    background: s.$color_green;
+
+    &__container {
+        @include m.container("default");
+    }
+
+}

@@ -312,14 +312,14 @@
 					<div class="price__content">
 
 						<!-- drop-in -->
-						<div class="drop-in">
+						<div class="drop-in price__drop-in">
 							<div class="drop-in__box price-box">
 								<p class="drop-in__box-top price-box__top">
 									<span class="drop-in__menu price-box__menu">ドロップイン</span>
-									<span class="drop-in__frequency price-box__main-text">１回</span>
+									<span class="drop-in__frequency price-box__text-main">１回</span>
 								</p>
 								<p class="drop-in__box-bottom price-box__bottom">
-									<span class="drop-in__time price-box__sub-text">60分</span>
+									<span class="drop-in__time price-box__text-sub">60分</span>
 									<span class="drop-in__price price-box__price">￥3300</span>
 								</p>
 							</div>
@@ -327,19 +327,21 @@
 						</div><!-- ./drop-in -->
 
 						<!-- coupon -->
-						<div class="coupon">
-							<h3 class="coupon__heading article-heading">回数券</h3>
-							<p class="coupon__note">※60分・80分のどちらのレッスンでもご利用いただけます</p>
+						<div class="coupon price__coupon">
+							<div class="post-heading-wrapper">
+								<h3 class="coupon__heading post-heading">回数券</h3>
+							</div>
+							<p class="coupon__heading-note">※60分・80分のどちらのレッスンでもご利用いただけます</p>
 
 							<ul class="coupon__list">
 								<li class="coupon__list-item">
 									<div class="coupon__box price-box">
 										<figure class="coupon__thumbnail">
-											<img src="" alt="" class="coupon__thumbnail-img">
+											<img src="images/three-times-coupon.png" alt="" class="coupon__thumbnail-img">
 										</figure>
 										<p class="coupon__box-top price-box__top">
-											<span class="coupon__frequency price-box__main-text">3回券</span>
-											<span class="coupon__period price-box__sub-text">有効期限２ヶ月</span>
+											<span class="coupon__frequency price-box__text-main">3回券</span>
+											<span class="coupon__period price-box__text-sub">有効期限２ヶ月</span>
 										</p>
 										<p class="coupon__box-bottom price-box__bottom">
 											<span class="coupon__price price-box__price">￥8250</span>
@@ -350,11 +352,11 @@
 								<li class="coupon__list-item">
 									<div class="coupon__box price-box">
 										<figure class="coupon__thumbnail">
-											<img src="" alt="" class="coupon__thumbnail-img">
+											<img src="images/five-times-coupon.png" alt="" class="coupon__thumbnail-img">
 										</figure>
 										<p class="coupon__box-top price-box__top">
-											<span class="coupon__frequency price-box__main-text">5回券</span>
-											<span class="coupon__period price-box__sub-text">有効期限２ヶ月</span>
+											<span class="coupon__frequency price-box__text-main">5回券</span>
+											<span class="coupon__period price-box__text-sub">有効期限２ヶ月</span>
 										</p>
 										<p class="coupon__box-bottom price-box__bottom">
 											<span class="coupon__price price-box__price">￥12100</span>
@@ -365,11 +367,11 @@
 								<li class="coupon__list-item">
 									<div class="coupon__box price-box">
 										<figure class="coupon__thumbnail">
-											<img src="" alt="" class="coupon__thumbnail-img">
+											<img src="images/eight-times-coupon.png" alt="" class="coupon__thumbnail-img">
 										</figure>
 										<p class="coupon__box-top price-box__top">
-											<span class="coupon__frequency price-box__main-text">8回券</span>
-											<span class="coupon__period price-box__sub-text">有効期限3ヶ月</span>
+											<span class="coupon__frequency price-box__text-main">8回券</span>
+											<span class="coupon__period price-box__text-sub">有効期限3ヶ月</span>
 										</p>
 										<p class="coupon__box-bottom price-box__bottom">
 											<span class="coupon__price price-box__price">￥18700</span>
@@ -380,11 +382,11 @@
 								<li class="coupon__list-item">
 									<div class="coupon__box price-box">
 										<figure class="coupon__thumbnail">
-											<img src="" alt="" class="coupon__thumbnail-img">
+											<img src="images/ten-times-coupon.png" alt="" class="coupon__thumbnail-img">
 										</figure>
 										<p class="coupon__box-top price-box__top">
-											<span class="coupon__frequency price-box__main-text">10回券</span>
-											<span class="coupon__period price-box__sub-text">有効期限3ヶ月</span>
+											<span class="coupon__frequency price-box__text-main">10回券</span>
+											<span class="coupon__period price-box__text-sub">有効期限3ヶ月</span>
 										</p>
 										<p class="coupon__box-bottom price-box__bottom">
 											<span class="coupon__price price-box__price">￥22000</span>
@@ -396,14 +398,15 @@
 						</div><!-- ./coupon -->
 
 						<!-- private -->
-						<div class="private">
-							<h3 class="private__heading article-heading">プライベートレッスン（60分）</h3>
-							
+						<div class="private price__private">
+							<div class="post-heading-wrapper">
+								<h3 class="private__heading post-heading">プライベートレッスン（60分）</h3>
+							</div>
 							<!-- alone -->
-							<div class="alone">
+							<div class="alone private__alone">
 								<div class="alone__box price-box">
 									<p class="alone__box-top price-box__top">
-										<span class="alone__menu price-box__main-text">１名様</span>
+										<span class="alone__menu price-box__text-main">１名様</span>
 									</p>
 									<p class="alone__box-bottom price-box__bottom">
 										<span class="alone__price price-box__price">￥6600</span>
@@ -412,18 +415,41 @@
 							</div><!-- ./alone -->
 
 							<!-- multiple-people -->
-							<div class="multiple-people">
+							<div class="multiple-people private__multiple-people">
 								<div class="multiple-people__box price-box">
 									<p class="multiple-people__box-top price-box__top">
-										<span class="multiple-people__menu price-box__main-text">２名以上の場合</span>
+										<span class="multiple-people__menu price-box__text-main">２名以上の場合</span>
 									</p>
 									<div class="multiple-people__box-bottom price-box__bottom">
-										<ul>
-											<li class="multiple-people__price price-box__price"></li>
-											<li class="multiple-people__price price-box__price"></li>
-											<li class="multiple-people__price price-box__price"></li>
-											<li class="multiple-people__price price-box__price"></li>
-										</ul>
+										<table class="multiple-people__price-table">
+											<tr>
+												<td class="multiple-people__price-item multiple-people__table-note price-box__text-sub" colspan="4">(お一人あたり)</td>
+											</tr>
+											<tr>
+												<td class="multiple-people__price-item price-box__price">2名様</td>
+												<td class="multiple-people__price-item price-box__price"><span lang="ja">………</span></td>
+												<td class="multiple-people__price-item price-box__price">￥4400</td>
+												<td class="multiple-people__price-item price-box__price">/名</td>
+											</tr>
+											<tr>
+												<td class="multiple-people__price-item price-box__price">3名様</td>
+												<td class="multiple-people__price-item price-box__price"><span lang="ja">………</span></td>
+												<td class="multiple-people__price-item price-box__price">￥3300</td>
+												<td class="multiple-people__price-item price-box__price">/名</td>
+											</tr>
+											<tr>
+												<td class="multiple-people__price-item price-box__price">4名様</td>
+												<td class="multiple-people__price-item price-box__price"><span lang="ja">………</span></td>
+												<td class="multiple-people__price-item price-box__price">￥2750</td>
+												<td class="multiple-people__price-item price-box__price">/名</td>
+											</tr>
+											<tr>
+												<td class="multiple-people__price-item price-box__price">5名様</td>
+												<td class="multiple-people__price-item price-box__price"><span lang="ja">………</span></td>
+												<td class="multiple-people__price-item price-box__price">￥2200</td>
+												<td class="multiple-people__price-item price-box__price">/名</td>
+											</tr>
+										</table>
 									</div>
 								</div>
 								<p class="multiple-people__note">自分の好きなヨガを自分のペースで好きなだけ楽しみたい方のためのプライベートレッスン。<br>「今日はちょっとアクティブなヨガがしたい！」「今日はリラックス系がいいな♪」といった１人ひとりの希望に合わせて、あなただけのオーダーメイドのヨガレッスンを提供いたします。「スタジオやジムでヨガをやっているけれど、正しいやり方を知りたい」という方はアライメントを学びながらヨガを進めていきますのでヨガをより深く理解することができます。初心者の方もインストラクターと相談しながら、その時の体調などに合わせて自由にレッスンメニューを組むことができますので安心してヨガをお楽しみいただけます。</p>
@@ -452,7 +478,7 @@
 						<!-- trial-box -->
 						<div class="trial__box trial-box">
 							<p class="trial-box__title">初めての方限定</p>
-							<p class="trial-box__menu">初めての方限定
+							<p class="trial-box__menu">体験レッスン
 								<span class="trial-box__price">¥2200</span>
 							</p>
 							<p class="trial-box__60minute-note">60分のグループレッスンを体験いただけます。</p>
@@ -464,19 +490,19 @@
 							<ul class="trial-step__list">
 								<li class="trial-step__list-item">
 									<div class="trial-step__box">
-										<h4 class="trial-step__title">STEP<span class="trial-step__number">01</span></h4>
+										<h4 class="trial-step__title">STEP<span class="trial-step__title-number">01</span></h4>
 										<p class="trial-step__text">レッスンスケジュールを見て、受講するレッスン日時を選びます。初回はパワーヨガBASICがおすすめです。</p>
 									</div>
 								</li>
 								<li class="trial-step__list-item">
 									<div class="trial-step__box">
-										<h4 class="trial-step__title">STEP<span class="trial-step__number">02</span></h4>
+										<h4 class="trial-step__title">STEP<span class="trial-step__title-number">02</span></h4>
 										<p class="trial-step__text">WEBの予約フォームから、もしくはお電話にてレッスンを予約します。</p>
 									</div>
 								</li>
 								<li class="trial-step__list-item">
 									<div class="trial-step__box">
-										<h4 class="trial-step__title">STEP<span class="trial-step__number">03</span></h4>
+										<h4 class="trial-step__title">STEP<span class="trial-step__title-number">03</span></h4>
 										<p class="trial-step__text">当日は、ヨガのできる動きやすい服装にあらかじめ着替えて、レッスン開始時刻の15分前にお越しください。</p>
 									</div>
 									<p class="trial-step__note">ヨガマットは無料レンタルがございます。<br>ご自身のマットをお持ちいただいても構いません。</p>
@@ -484,7 +510,7 @@
 								</li>
 								<li class="trial-step__list-item">
 									<div class="trial-step__box">
-										<h4 class="trial-step__title">STEP<span class="trial-step__number">04</span></h4>
+										<h4 class="trial-step__title">STEP<span class="trial-step__title-number">04</span></h4>
 										<p class="trial-step__text">スタジオに着いたら最初に同意書のご記入、受講料のお支払いをして、レッスンをお楽しみください。</p>
 									</div>
 									<p class="trial-step__note">感染症対策として常時換気をしております。<br>同時に冷暖房もつけていますが<br>服装による体温調節をお願い致します。</p>
@@ -519,7 +545,9 @@
 						</div>
 
 						<div class="parking">
-							<h3 class="coupon__heading article-heading">駐車場</h3>
+							<div class="post-heading-wrapper">
+								<h3 class="coupon__heading post-heading">駐車場</h3>
+							</div>
 							<img src="" alt="" class="parking__map-img">
 							<img src="" alt="" class="parking__directions-img">
 						</div>

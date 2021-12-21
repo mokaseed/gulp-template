@@ -1,0 +1,122 @@
+
+// price
+
+@use "../mixin" as m;
+@use "../setting" as s;
+
+.price {
+
+    background: s.$color_green;
+
+    &__container {
+        @include m.container("default");
+    }
+
+    &__drop-in {
+        margin-bottom: 6.6rem;
+    }
+}
+
+.drop-in {
+    &__box {
+        margin-bottom: 0.5rem;
+    }
+
+    &__note {
+        font-size: s.$font_size_s;
+        letter-spacing: 0.08rem;
+        text-align: center;
+    }
+}
+
+.coupon {
+
+    &__heading {
+        margin-bottom: 1.35rem;
+        padding: 0 5.5rem;
+    }
+
+    &__heading-note {
+        font-size: s.$font_size_s;
+        letter-spacing: 0.08rem;
+        text-align: center;
+        margin-bottom: 4.5rem;
+    }
+
+    &__list {
+        padding-left: 0;
+    }
+
+    &__list-item {
+        margin-bottom: 6.4rem;
+    }
+
+    &__box {
+        position: relative;
+    }
+
+    &__box-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__box-top,
+    &__box-bottom {
+        margin-right: 0;
+    }
+
+    &__thumbnail {
+        position: absolute;
+        top: -20px;
+        left: -15px;
+    }
+
+    &__thumbnail-img {
+        max-width: 19.6rem;
+        max-height: 13rem;
+        box-shadow: -12px 20px 16px #796A4B66;
+    }
+
+    &__note {
+        letter-spacing: 0.08rem;
+        margin-bottom: 6.5rem;
+    }
+}
+
+.private {
+
+    &__heading {
+        margin-bottom: 5.5rem;
+        padding: 0 3rem;
+    }
+
+    &__alone {
+        margin-bottom: 4.4rem;
+    }
+
+}
+
+.multiple-people {
+    
+    &__box{
+        margin-bottom: 3.6rem;
+    }
+
+    &__price-table {
+        margin: 0 auto;
+    }
+
+    
+    &__price-item {
+        text-align: left;
+    }
+    
+    &__table-note {
+        text-align: right;
+    }
+
+    &__note {
+        letter-spacing: 0.05rem;
+        line-height: 1.8;
+    }
+}

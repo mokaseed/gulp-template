@@ -226,6 +226,53 @@ select {
   font-size: 2.5rem;
 }
 
+.post-heading-wrapper {
+  text-align: center;
+}
+
+.post-heading {
+  display: inline-block;
+  font-size: 2.4rem;
+  border: 2px solid #000000;
+  border-radius: 51px;
+  height: 5.05rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 5.05rem;
+}
+
+.price-box {
+  background: #F7FDF2;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+.price-box__top {
+  border-bottom: 2px solid #CECECE;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.price-box__bottom {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.price-box__text-main {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+.price-box__text-sub {
+  font-size: 1.6rem;
+}
+.price-box__price {
+  font-size: 2.4rem;
+}
+.price-box__menu {
+  font-weight: bold;
+}
+
 .about {
   background-color: #F2F5F5;
 }
@@ -256,6 +303,27 @@ select {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.3;
+}
+
+.access {
+  background: #DBE6D2;
+}
+.access__container {
+  margin: 0 auto;
+  width: 95%;
+  padding: 100px 0 120px;
+  max-width: 462.5px;
+}
+@media screen and (min-width: 600px) {
+  .access__container {
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .access__container {
+    max-width: 1200px;
+    width: 90%;
+  }
 }
 
 .instagram {
@@ -293,6 +361,27 @@ select {
 .instagram__icon-text {
   font-weight: bold;
   font-size: 2.5rem;
+}
+
+.instructor {
+  background: #FFFFFF;
+}
+.instructor__container {
+  margin: 0 auto;
+  width: 95%;
+  padding: 100px 0 120px;
+  max-width: 462.5px;
+}
+@media screen and (min-width: 600px) {
+  .instructor__container {
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .instructor__container {
+    max-width: 1200px;
+    width: 90%;
+  }
 }
 
 .lessons {
@@ -430,6 +519,153 @@ select {
   margin-top: 3%;
 }
 
+.price {
+  background: #DBE6D2;
+}
+.price__container {
+  margin: 0 auto;
+  width: 95%;
+  padding: 100px 0 120px;
+  max-width: 462.5px;
+}
+@media screen and (min-width: 600px) {
+  .price__container {
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .price__container {
+    max-width: 1200px;
+    width: 90%;
+  }
+}
+.price__drop-in {
+  margin-bottom: 6.6rem;
+}
+
+.drop-in__box {
+  margin-bottom: 0.5rem;
+}
+.drop-in__note {
+  font-size: 1.6rem;
+  letter-spacing: 0.08rem;
+  text-align: center;
+}
+
+.coupon__heading {
+  margin-bottom: 1.35rem;
+  padding: 0 5.5rem;
+}
+.coupon__heading-note {
+  font-size: 1.6rem;
+  letter-spacing: 0.08rem;
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+.coupon__list {
+  padding-left: 0;
+}
+.coupon__list-item {
+  margin-bottom: 6.4rem;
+}
+.coupon__box {
+  position: relative;
+}
+.coupon__box-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.coupon__box-top, .coupon__box-bottom {
+  margin-right: 0;
+}
+.coupon__thumbnail {
+  position: absolute;
+  top: -20px;
+  left: -15px;
+}
+.coupon__thumbnail-img {
+  max-width: 19.6rem;
+  max-height: 13rem;
+  -webkit-box-shadow: -12px 20px 16px #796A4B66;
+          box-shadow: -12px 20px 16px #796A4B66;
+}
+.coupon__note {
+  letter-spacing: 0.08rem;
+  margin-bottom: 6.5rem;
+}
+
+.private__heading {
+  margin-bottom: 5.5rem;
+  padding: 0 3rem;
+}
+.private__alone {
+  margin-bottom: 4.4rem;
+}
+
+.multiple-people__box {
+  margin-bottom: 3.6rem;
+}
+.multiple-people__price-table {
+  margin: 0 auto;
+}
+.multiple-people__price-item {
+  text-align: left;
+}
+.multiple-people__table-note {
+  text-align: right;
+}
+.multiple-people__note {
+  letter-spacing: 0.05rem;
+  line-height: 1.8;
+}
+
+.reservation {
+  background: #F2F5F5;
+}
+.reservation__container {
+  margin: 0 auto;
+  width: 95%;
+  padding: 100px 0 120px;
+  max-width: 462.5px;
+}
+@media screen and (min-width: 600px) {
+  .reservation__container {
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .reservation__container {
+    max-width: 1200px;
+    width: 90%;
+  }
+}
+
+.schedule {
+  background: #F2F5F5;
+}
+.schedule__container {
+  margin: 0 auto;
+  width: 95%;
+  padding: 100px 0 120px;
+  max-width: 462.5px;
+}
+@media screen and (min-width: 600px) {
+  .schedule__container {
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .schedule__container {
+    max-width: 1200px;
+    width: 90%;
+  }
+}
+
 .top-mainview__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -471,5 +707,104 @@ select {
 }
 .top-mainview__text_bottom {
   padding-top: 80px;
+}
+
+.trial {
+  background: #F2F5F5;
+}
+.trial__container {
+  margin: 0 auto;
+  width: 95%;
+  padding: 100px 0 120px;
+  max-width: 462.5px;
+}
+@media screen and (min-width: 600px) {
+  .trial__container {
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .trial__container {
+    max-width: 1200px;
+    width: 90%;
+  }
+}
+.trial__box {
+  margin-bottom: 12rem;
+}
+
+.trial-box {
+  background: #FFFFFF;
+  padding: 4.25rem 0;
+  width: 100%;
+  text-align: center;
+}
+.trial-box__title {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+.trial-box__menu {
+  font-size: 2.4rem;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.trial-box__menu::after {
+  display: block;
+  content: "";
+  width: 300px;
+  height: 7px;
+  background: #FFE86A;
+  position: absolute;
+  left: 80px;
+  top: 60px;
+}
+.trial-box__price {
+  font-size: 4.6rem;
+  font-weight: bold;
+}
+.trial-box__60minute-note {
+  letter-spacing: 0.045rem;
+  border-bottom: 2px solid #CECECE;
+  width: 95%;
+  margin: 0 auto 1.5rem;
+  padding-bottom: 3.5rem;
+}
+.trial-box__80minute-note {
+  letter-spacing: 0.045rem;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+}
+
+.trial-step__list {
+  padding: 0;
+}
+.trial-step__box {
+  background-color: #FFFFFF;
+  padding: 2.8rem 1rem;
+  position: relative;
+}
+.trial-step__box:nth-of-type(2) {
+  margin-bottom: 8rem;
+  background-color: aqua;
+}
+.trial-step__title {
+  position: absolute;
+  top: -7rem;
+  right: 32%;
+  left: 32%;
+  color: #BCBCBC;
+  font-size: 3rem;
+  text-align: center;
+}
+.trial-step__title-number {
+  font-size: 7rem;
+  font-weight: normal;
+  margin-left: 0.5rem;
+  letter-spacing: 0.2rem;
+}
+.trial-step__text {
+  font-weight: bold;
+  letter-spacing: 0.045rem;
 }
 /*# sourceMappingURL=style.css.map */

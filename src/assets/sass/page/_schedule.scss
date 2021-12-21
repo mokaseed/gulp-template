@@ -1,0 +1,14 @@
+// schedule
+
+@use "../mixin" as m;
+@use "../setting" as s;
+
+.schedule {
+
+    background: s.$color_gray_light;
+
+    &__container {
+        @include m.container("default");
+    }
+
+}
